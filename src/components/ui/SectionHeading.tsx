@@ -52,7 +52,7 @@ export default function SectionHeading({
         )}
       />
       {description ? (
-        <p className={cn('mt-5 text-base leading-relaxed sm:text-lg', dark ? 'text-cream/70' : 'text-ink/65')}>
+        <p className={cn('mt-4 text-base leading-relaxed sm:text-lg', dark ? 'text-cream/70' : 'text-ink/65')}>
           {description}
         </p>
       ) : null}
