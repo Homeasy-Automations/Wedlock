@@ -36,7 +36,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Content */}
-      <motion.div style={{ y: contentY, opacity: fade }} className="container-x relative z-10 pb-28 pt-40 sm:pb-32">
+      <motion.div style={{ y: contentY, opacity: fade }} className="container-x relative z-10 pb-28 pt-60 sm:pb-32">
         <motion.p
           initial={reduce ? false : { opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export default function Hero() {
           <AnimatedText text="Thoughtfully produced." delay={0.8} stagger={0.06} as="span" className="block text-cream/90" />
         </h1>
 
-        <motion.p
+        {/* <motion.p
           initial={reduce ? false : { opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.15, duration: 0.8 }}
@@ -60,7 +60,7 @@ export default function Hero() {
           Weddings, birthdays, anniversaries, engagements and the gatherings in between —
           planned, designed, produced and executed by one obsessive team, across 40+ cities
           and 14 countries.
-        </motion.p>
+        </motion.p> */}
 
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 16 }}
