@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2C554C"/>
+      <stop offset="0.55" stop-color="#14201E"/>
+      <stop offset="1" stop-color="#14201E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.38" r="0.75">
+      <stop offset="0" stop-color="#8FB39F" stop-opacity="0.5"/>
+      <stop offset="0.55" stop-color="#8FB39F" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#8FB39F" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect width="1600" height="1200" fill="url(#glow)"/>
+  <circle cx="767" cy="575" r="246" fill="#E9F0E8" opacity="0.084"/>
+  <circle cx="785" cy="542" r="127" fill="#E9F0E8" opacity="0.055"/>
+  <circle cx="779" cy="25" r="144" fill="#E9F0E8" opacity="0.057"/>
+  <circle cx="748" cy="86" r="149" fill="#E9F0E8" opacity="0.084"/>
+  <!-- venue arch motif -->
+  <g opacity="0.9">
+    <path d="M 519 1080 L 519 656 A 272 272 0 0 1 1063 656 L 1063 1080 Z" fill="#8FB39F" opacity="0.14" stroke="#8FB39F" stroke-opacity="0.5" stroke-width="2"/>
+    <path d="M 545 1080 L 545 656 A 246 246 0 0 1 1037 656 L 1037 1080 Z" fill="none" stroke="#E9F0E8" stroke-opacity="0.22" stroke-width="1.5"/>
+  </g>
+  <text x="50%" y="46%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="504" fill="#E9F0E8" opacity="0.13">D</text>
+  <text x="50%" y="1044" text-anchor="middle" font-family="Georgia, serif" letter-spacing="18" font-size="66" fill="#E9F0E8" opacity="0.92">DESTINATIONS</text>
+  <g font-family="Georgia, serif" font-size="29" fill="#E9F0E8" opacity="0.55" letter-spacing="15">
+    <text x="50%" y="1098" text-anchor="middle">WEDLOCK · THOUGHTFULLY PRODUCED</text>
+  </g>
+  <circle cx="50%" cy="1134" r="10" fill="#8FB39F"/>
+  <rect width="1600" height="1200" filter="url(#grain)" opacity="0.05"/>
+</svg>

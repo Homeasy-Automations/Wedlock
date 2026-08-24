@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5C4A2E"/>
+      <stop offset="0.55" stop-color="#221A13"/>
+      <stop offset="1" stop-color="#221A13"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.38" r="0.75">
+      <stop offset="0" stop-color="#C9A24B" stop-opacity="0.5"/>
+      <stop offset="0.55" stop-color="#C9A24B" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#C9A24B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="1050" fill="url(#bg)"/>
+  <rect width="1400" height="1050" fill="url(#glow)"/>
+  <circle cx="435" cy="327" r="177" fill="#F4EAD7" opacity="0.072"/>
+  <circle cx="430" cy="281" r="169" fill="#F4EAD7" opacity="0.068"/>
+  <circle cx="403" cy="289" r="154" fill="#F4EAD7" opacity="0.074"/>
+  <circle cx="397" cy="268" r="187" fill="#F4EAD7" opacity="0.071"/>
+  <!-- venue arch motif -->
+  <g opacity="0.9">
+    <path d="M 407 945 L 407 574 A 238 238 0 0 1 883 574 L 883 945 Z" fill="#C9A24B" opacity="0.14" stroke="#C9A24B" stroke-opacity="0.5" stroke-width="2"/>
+    <path d="M 433 945 L 433 574 A 212 212 0 0 1 857 574 L 857 945 Z" fill="none" stroke="#F4EAD7" stroke-opacity="0.22" stroke-width="1.5"/>
+  </g>
+  <text x="50%" y="46%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="441" fill="#F4EAD7" opacity="0.13">W</text>
+  <text x="50%" y="913" text-anchor="middle" font-family="Georgia, serif" letter-spacing="16" font-size="58" fill="#F4EAD7" opacity="0.92">WEDDING KERALA</text>
+  <g font-family="Georgia, serif" font-size="25" fill="#F4EAD7" opacity="0.55" letter-spacing="13">
+    <text x="50%" y="961" text-anchor="middle">WEDLOCK · THOUGHTFULLY PRODUCED</text>
+  </g>
+  <circle cx="50%" cy="992" r="9" fill="#C9A24B"/>
+  <rect width="1400" height="1050" filter="url(#grain)" opacity="0.05"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8A5458"/>
+      <stop offset="0.55" stop-color="#281A1B"/>
+      <stop offset="1" stop-color="#281A1B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.38" r="0.75">
+      <stop offset="0" stop-color="#D98A90" stop-opacity="0.5"/>
+      <stop offset="0.55" stop-color="#D98A90" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#D98A90" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect width="1600" height="1200" fill="url(#glow)"/>
+  <circle cx="276" cy="207" r="166" fill="#FAEBED" opacity="0.062"/>
+  <circle cx="169" cy="136" r="156" fill="#FAEBED" opacity="0.074"/>
+  <circle cx="176" cy="160" r="206" fill="#FAEBED" opacity="0.060"/>
+  <circle cx="157" cy="417" r="214" fill="#FAEBED" opacity="0.054"/>
+  <!-- venue arch motif -->
+  <g opacity="0.9">
+    <path d="M 412 1080 L 412 656 A 272 272 0 0 1 956 656 L 956 1080 Z" fill="#D98A90" opacity="0.14" stroke="#D98A90" stroke-opacity="0.5" stroke-width="2"/>
+    <path d="M 438 1080 L 438 656 A 246 246 0 0 1 930 656 L 930 1080 Z" fill="none" stroke="#FAEBED" stroke-opacity="0.22" stroke-width="1.5"/>
+  </g>
+  <text x="50%" y="46%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="504" fill="#FAEBED" opacity="0.13">A</text>
+  <text x="50%" y="1044" text-anchor="middle" font-family="Georgia, serif" letter-spacing="18" font-size="66" fill="#FAEBED" opacity="0.92">ANNIVERSARIES</text>
+  <g font-family="Georgia, serif" font-size="29" fill="#FAEBED" opacity="0.55" letter-spacing="15">
+    <text x="50%" y="1098" text-anchor="middle">WEDLOCK · THOUGHTFULLY PRODUCED</text>
+  </g>
+  <circle cx="50%" cy="1134" r="10" fill="#D98A90"/>
+  <rect width="1600" height="1200" filter="url(#grain)" opacity="0.05"/>
+</svg>
