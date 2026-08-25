@@ -66,7 +66,8 @@ export default function BrandIntro() {
         <div className="relative">
           {/* Main Image — original alignment unchanged */}
           <ImageReveal
-            src="https://wedlock.co.in/wp-content/uploads/2024/05/DSC04668-scaled.jpg"
+            //  src="https://wedlock.co.in/wp-content/uploads/2024/05/DSC04668-scaled.jpg"
+            src="https://wedlock.co.in/wp-content/uploads/2024/04/A50A2571EDITED.jpg"
             alt="Wedding mandap designed by Wedlock in antique gold and ivory"
             className="aspect-[4/5] rounded-[2rem]"
             sizes="(max-width: 1024px) 100vw, 50vw"

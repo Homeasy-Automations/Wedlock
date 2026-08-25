@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Hero from '@/components/home/Hero';
 import BrandIntro from '@/components/home/BrandIntro';
 import Stats from '@/components/home/Stats';
+import BrandSignatureGrid from '@/components/home/BrandSignatureGrid';
 import OccasionSection from '@/components/home/OccasionSection';
 import Capabilities from '@/components/home/Capabilities';
 import Portfolio from '@/components/home/Portfolio';
@@ -27,6 +28,7 @@ export default function HomePage() {
       <Hero />
       <BrandIntro />
       <Stats />
+      <BrandSignatureGrid />
       <OccasionSection />
       <Capabilities />
       <Portfolio />
