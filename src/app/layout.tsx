@@ -13,6 +13,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import StickyCTA from '@/components/layout/StickyCTA';
 import PageTransition from '@/components/ui/PageTransition';
+import FloatingIcons from '@/components/ui/FloatingIcons';
 import { defaultMetadata } from '@/lib/seo';
 
 const sacramento = Sacramento({ weight: '400', subsets: ['latin'], variable: '--font-sacramento' });
@@ -26,7 +27,7 @@ const body = Manrope({ subsets: ['latin'], variable: '--font-body' });
 export const metadata: Metadata = defaultMetadata;
 
 export const viewport: Viewport = {
-  themeColor: '#FBF6F0',
+  themeColor: '#F8EBEB',
   width: 'device-width',
   initialScale: 1,
 };
@@ -37,9 +38,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${sacramento.variable} ${alex.variable} ${allura.variable} ${dancing.variable} ${beau.variable} ${display.variable} ${body.variable} font-body`}
       >
-        <Navbar />
-        <PageTransition>{children}</PageTransition>
-        <Footer />
+        <FloatingIcons />
+        <div className="relative z-10">
+          <Navbar />
+          <PageTransition>{children}</PageTransition>
+          <Footer />
+        </div>
         <StickyCTA />
         <script
           type="application/ld+json"

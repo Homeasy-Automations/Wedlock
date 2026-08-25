@@ -7,6 +7,7 @@ import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion
 import { ChevronRight } from 'lucide-react';
 import AnimatedText from '@/components/ui/AnimatedText';
 import MagneticButton from '@/components/ui/MagneticButton';
+import HeroVideo from '@/components/ui/HeroVideo';
 import type { Celebration } from '@/types/celebration';
 
 export default function CelebrationHero({ celebration }: { celebration: Celebration }) {
@@ -23,14 +24,18 @@ export default function CelebrationHero({ celebration }: { celebration: Celebrat
     >
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
         <div className={reduce ? 'absolute inset-0' : 'absolute inset-0 animate-kenburns'}>
-          <Image
-            src={celebration.heroImage}
-            alt={`${celebration.name} — a Wedlock celebration`}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
+          {celebration.heroVideo ? (
+            <HeroVideo src={celebration.heroVideo} poster={celebration.heroImage} />
+          ) : (
+            <Image
+              src={celebration.heroImage}
+              alt={`${celebration.name} — a Wedlock celebration`}
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+            />
+          )}
         </div>
         <div
           className="absolute inset-0"

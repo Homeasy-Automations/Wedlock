@@ -3,6 +3,7 @@ import { buildMetadata } from '@/lib/seo';
 import { events } from '@/data/events';
 import { isValidOccasion } from '@/lib/validations';
 import AnimatedText from '@/components/ui/AnimatedText';
+import HeroVideo from '@/components/ui/HeroVideo';
 import EventFilter from '@/components/events/EventFilter';
 import EventGrid from '@/components/events/EventGrid';
 import FinalCTA from '@/components/home/FinalCTA';
@@ -30,24 +31,28 @@ export default function EventsPage({ searchParams }: EventsPageProps) {
 
   return (
     <>
-      <section className="pb-10 pt-36 sm:pt-44">
-        <div className="container-x">
+      <section className="relative flex min-h-[58svh] items-end overflow-hidden bg-ink">
+        <div className="absolute inset-0 scale-110">
+          <HeroVideo src="/videos/stage-decor2.mp4" />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/35" />
+        <div className="container-x relative z-10 pb-14 pt-36 sm:pt-44">
           <p className="font-dancing text-4xl leading-none text-gold sm:text-5xl">Proof, not promises</p>
           <AnimatedText
             text="Celebrations we have actually produced."
             as="h1"
             delay={0.2}
-            className="mt-5 max-w-3xl font-display text-4xl font-medium leading-[1.08] tracking-tight text-ink sm:text-6xl"
+            className="mt-5 max-w-3xl font-display text-4xl font-medium leading-[1.08] tracking-tight text-cream sm:text-6xl"
           />
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-ink/65 sm:text-lg">
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-cream/75 sm:text-lg">
             Every entry below is a true Wedlock production — real families, real venues, real weather.
             Filter by occasion and step inside the stories.
           </p>
-
-          <div className="mt-10">
-            <EventFilter active={active} counts={counts} />
-          </div>
         </div>
+      </section>
+
+      <section className="container-x pb-10 pt-14 sm:pt-16">
+        <EventFilter active={active} counts={counts} />
       </section>
 
       <section className="container-x pb-24 sm:pb-32">

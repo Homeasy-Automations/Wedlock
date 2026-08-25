@@ -14,7 +14,7 @@ export default function CelebrationProcess({ celebration }: { celebration: Celeb
   return (
     <section
       className="py-20 sm:py-28"
-      style={{ ['--cat' as string]: celebration.accent, backgroundColor: `color-mix(in srgb, ${celebration.accent} 7%, #FBF6F0)` } as React.CSSProperties}
+      style={{ ['--cat' as string]: celebration.accent, backgroundColor: `color-mix(in srgb, ${celebration.accent} 7%, #F8EBEB)` } as React.CSSProperties}
     >
       <div className="container-x">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">

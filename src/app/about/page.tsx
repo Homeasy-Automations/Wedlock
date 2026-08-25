@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import AnimatedText from '@/components/ui/AnimatedText';
 import ImageReveal from '@/components/ui/ImageReveal';
+import HeroVideo from '@/components/ui/HeroVideo';
 import Stats from '@/components/home/Stats';
 import WhyWedlock from '@/components/home/WhyWedlock';
 import ProcessSection from '@/components/home/ProcessSection';
@@ -94,13 +95,13 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="relative">
-            <ImageReveal
-              src="https://wedlock.co.in/wp-content/uploads/2024/04/20210701_192754-scaled.jpg"
-              alt="The Wedlock team at a celebration setup"
-              className="aspect-[4/5] rounded-[2rem]"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              priority
-            />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
+              <HeroVideo
+                src="/videos/stage-decor6.mp4"
+                poster="https://wedlock.co.in/wp-content/uploads/2024/04/20210701_192754-scaled.jpg"
+                className="h-full w-full rounded-[2rem] object-cover"
+              />
+            </div>
             <ImageReveal
               src="https://wedlock.co.in/wp-content/uploads/2024/05/20230217_190327-1.jpg"
               alt="Detail of a Wedlock tablescape"

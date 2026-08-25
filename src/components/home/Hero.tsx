@@ -2,11 +2,11 @@
 
 import { useRef } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import MagneticButton from '@/components/ui/MagneticButton';
 import AnimatedText from '@/components/ui/AnimatedText';
+import HeroVideo from '@/components/ui/HeroVideo';
 import { celebrations } from '@/data/celebrations';
 
 export default function Hero() {
@@ -22,13 +22,9 @@ export default function Hero() {
       {/* Background media — scroll parallax + slow ken burns */}
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
         <div className={reduce ? 'absolute inset-0' : 'absolute inset-0 animate-kenburns'}>
-          <Image
-            src="https://wedlock.co.in/wp-content/uploads/2024/04/image0-1024x682.jpeg"
-            alt="A Wedlock celebration in full bloom — candlelight, florals and gold"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
+          <HeroVideo
+            src="/videos/wedding1.mp4"
+            poster="https://wedlock.co.in/wp-content/uploads/2024/04/image0-1024x682.jpeg"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-ink/25" />

@@ -5,15 +5,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        base: '#FBF6F0',
-        cream: '#F4ECE2',
-        sand: '#ECE0D0',
-        ink: '#2A211C',
-        espresso: '#3A2E26',
+        base: '#F8EBEB',
+        cream: '#F8EBE1',
+        sand: '#F6DCE0',
+        ink: '#3A2A2E',
+        espresso: '#4A3438',
         gold: '#C9A24B',
-        blush: '#E8B4B8',
-        coral: '#E2725B',
-        burgundy: '#7A2E38',
+        blush: '#F0C6CD',
+        coral: '#E28B94',
+        burgundy: '#9B4A5A',
         sage: '#7C8B6F',
       },
       fontFamily: {

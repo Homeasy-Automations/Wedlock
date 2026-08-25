@@ -5,12 +5,14 @@ import Image from 'next/image';
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import AnimatedText from '@/components/ui/AnimatedText';
 import MagneticButton from '@/components/ui/MagneticButton';
+import HeroVideo from '@/components/ui/HeroVideo';
 
 interface DestinationHeroProps {
   kicker: string;
   title: string;
   description?: string;
   image: string;
+  video?: string;
   ctaLabel?: string;
   ctaHref?: string;
 }
@@ -20,6 +22,7 @@ export default function DestinationHero({
   title,
   description,
   image,
+  video,
   ctaLabel,
   ctaHref,
 }: DestinationHeroProps) {
@@ -32,7 +35,11 @@ export default function DestinationHero({
     <section ref={ref} className="relative flex min-h-[72svh] items-end overflow-hidden bg-ink">
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
         <div className={reduce ? 'absolute inset-0' : 'absolute inset-0 animate-kenburns'}>
-          <Image src={image} alt={title} fill priority sizes="100vw" className="object-cover" />
+          {video ? (
+            <HeroVideo src={video} poster={image} />
+          ) : (
+            <Image src={image} alt={title} fill priority sizes="100vw" className="object-cover" />
+          )}
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/25" />
       </motion.div>

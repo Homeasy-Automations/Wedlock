@@ -32,7 +32,7 @@ export default function SuccessState({ reference, payload }: SuccessStateProps) 
         <svg viewBox="0 0 32 32" className="h-9 w-9" fill="none" aria-hidden>
           <motion.path
             d="M7 17l6 6 12-13"
-            stroke="#FBF6F0"
+            stroke="#F8EBEB"
             strokeWidth={3.5}
             strokeLinecap="round"
             strokeLinejoin="round"

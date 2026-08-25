@@ -7,8 +7,11 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-base font-body text-ink antialiased;
+    @apply font-body text-ink antialiased;
     text-rendering: optimizeLegibility;
+    background: linear-gradient(160deg, #f8ebeb 0%, #f8ebe1 45%, #f6dce0 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
   }
   ::selection {
     @apply bg-gold/80 text-ink;
@@ -61,10 +64,10 @@
     --tw-ring-color: var(--cat, #c9a24b);
   }
   .bg-cat-soft {
-    background-color: color-mix(in srgb, var(--cat, #c9a24b) 12%, #fbf6f0);
+    background-color: color-mix(in srgb, var(--cat, #c9a24b) 12%, #f8ebeb);
   }
   .bg-cat-softer {
-    background-color: color-mix(in srgb, var(--cat, #c9a24b) 7%, #fbf6f0);
+    background-color: color-mix(in srgb, var(--cat, #c9a24b) 7%, #f8ebeb);
   }
   .btn-cat {
     background-color: var(--cat, #c9a24b);

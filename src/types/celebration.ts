@@ -28,6 +28,7 @@ export interface Celebration {
   description: string;
   heroKicker: string;
   heroImage: string;
+  heroVideo?: string;
   accent: string;
   accentInk: string;
   href: string;

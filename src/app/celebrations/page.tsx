@@ -6,6 +6,7 @@ import { buildMetadata } from '@/lib/seo';
 import { celebrations } from '@/data/celebrations';
 import AnimatedText from '@/components/ui/AnimatedText';
 import MagneticButton from '@/components/ui/MagneticButton';
+import HeroVideo from '@/components/ui/HeroVideo';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Celebrations — Weddings, Birthdays, Anniversaries, Engagements & Family',
@@ -18,14 +19,12 @@ export default function CelebrationsHubPage() {
   return (
     <>
       {/* Hub hero */}
-      <section className="relative overflow-hidden pb-16 pt-36 sm:pb-24 sm:pt-44">
-        <span
-          aria-hidden
-          className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 select-none font-sacramento text-[24vw] leading-none text-gold/[0.07]"
-        >
-          celebrate
-        </span>
-        <div className="container-x relative mx-auto max-w-3xl text-center">
+      <section className="relative flex min-h-[72svh] items-center overflow-hidden bg-ink">
+        <div className="absolute inset-0 scale-110">
+          <HeroVideo src="/videos/wedding2.mp4" />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/40" />
+        <div className="container-x relative z-10 mx-auto max-w-3xl pt-24 text-center">
           <p className="font-allura text-4xl leading-none text-gold sm:text-5xl">
             What are you celebrating?
           </p>
@@ -33,9 +32,9 @@ export default function CelebrationsHubPage() {
             text="Every occasion, produced like it matters — because it does."
             as="h1"
             delay={0.2}
-            className="mt-6 font-display text-4xl font-medium leading-[1.1] tracking-tight text-ink sm:text-6xl"
+            className="mt-6 font-display text-4xl font-medium leading-[1.1] tracking-tight text-cream sm:text-6xl"
           />
-          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-ink/65 sm:text-lg">
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-cream/75 sm:text-lg">
             Five occasion families. Fifty-one signature services. Zero templates. Choose yours below —
             or tell us directly and we will help you find it.
           </p>

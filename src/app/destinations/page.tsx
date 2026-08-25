@@ -20,6 +20,7 @@ export default function DestinationsPage() {
         title="Somewhere unforgettable is already waiting."
         description="Eight of our most-produced destinations below — and a destination desk that has scouted forty more. Where should your story unfold?"
         image="https://wedlock.co.in/wp-content/uploads/2024/04/A50A1563-819x1024.jpg"
+        video="/videos/wedding3.mp4"
         ctaLabel="Plan a destination wedding"
         ctaHref="/plan-your-celebration?occasion=weddings&service=destination-weddings"
       />
