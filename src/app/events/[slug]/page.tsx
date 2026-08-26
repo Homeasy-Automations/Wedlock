@@ -43,7 +43,7 @@ export default function EventDetailPage({ params }: EventDetailProps) {
   return (
     <>
       {/* Case-study hero */}
-      <section className="pb-0 pt-32 sm:pt-40">
+      <section className="pb-0 pt-22 sm:pt-40">
         <div className="container-x">
           <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-ink/45">
             <Link href="/events" className="transition-colors hover:text-gold">

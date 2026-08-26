@@ -13,7 +13,7 @@ interface Stat {
 const stats: Stat[] = [
   { value: 650, suffix: '+', label: 'Celebrations Produced', sub: 'weddings, birthdays, jubilees & more' },
   { value: 42, suffix: '', label: 'Cities & Destinations', sub: 'across India and 14 countries' },
-  { value: 5, suffix: '', label: 'Years of Craft', sub: 'since our first Patna wedding, 2019' },
+  { value: 12, suffix: '+', label: 'Years of Craft', sub: 'since our first Patna wedding, 2014' },
   { value: 250000, suffix: '+', label: 'Guests Hosted', sub: 'every one of them personally' },
 ];
 
@@ -52,7 +52,7 @@ function Counter({ to, suffix }: { to: number; suffix: string }) {
 
 export default function Stats() {
   return (
-    <section className="border-y border-ink/10 bg-cream py-16 sm:py-20">
+    <section className="border-b border-ink/10 bg-cream py-16 sm:py-20">
       <div className="container-x grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-4">
         {stats.map((s, i) => (
           <motion.div
@@ -61,7 +61,7 @@ export default function Stats() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-10% 0px' }}
             transition={{ delay: i * 0.1, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="relative pl-5"
+            className={`text-center ${i > 0 ? 'lg:border-l lg:border-gold/70 lg:pl-6' : ''}`}
           >
             <span className="absolute left-0 top-1 h-full w-px bg-gold" aria-hidden />
             <p className="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">

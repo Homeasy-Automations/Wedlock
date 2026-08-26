@@ -49,8 +49,8 @@ export default function Navbar() {
         className={cn(
           'fixed inset-x-0 top-0 z-50 transition-all duration-500',
           scrolled
-            ? 'border-b border-ink/10 bg-base/85 py-3 shadow-[0_8px_30px_-18px_rgba(42,33,28,0.35)] backdrop-blur-xl'
-            : 'border-b border-transparent bg-gradient-to-b from-base/70 to-transparent py-5 backdrop-blur-[2px]',
+            ? 'bg-base/85 py-3 shadow-[0_8px_30px_-18px_rgba(42,33,28,0.35)] backdrop-blur-xl'
+            : 'bg-gradient-to-b from-base/70 to-transparent py-5 backdrop-blur-[2px]',
         )}
       >
         <nav className="container-x flex items-center justify-between gap-6">
