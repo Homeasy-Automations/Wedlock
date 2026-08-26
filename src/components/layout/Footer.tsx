@@ -25,7 +25,7 @@ export default function Footer() {
   return (
     <footer className="grain relative bg-ink text-cream">
       {/* Destination weddings callout */}
-      <div className="container-x border-b border-cream/10 py-14">
+      <div className="container-x border-b border-cream/10 py-6">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
           <div>
             <p className="font-dancing text-3xl text-gold">Destination Weddings</p>
@@ -45,7 +45,7 @@ export default function Footer() {
       </div>
 
       {/* Sitemap */}
-      <div className="container-x grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div className="container-x grid gap-12 py-10 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <p className="font-sacramento text-5xl text-cream">
             Wedlock<span className="text-gold">.</span>
@@ -123,7 +123,7 @@ export default function Footer() {
       </div>
 
       {/* Contact strip */}
-      <div className="container-x flex flex-col gap-4 border-t border-cream/10 py-8 text-sm text-cream/60 sm:flex-row sm:items-center sm:justify-between">
+      <div className="container-x flex flex-col gap-4 border-t border-cream/10 py-6 text-sm text-cream/60 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
           <span className="inline-flex items-center gap-2">
             <MapPin className="h-4 w-4 text-gold" /> {siteConfig.cities.join(' · ')}
