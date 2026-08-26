@@ -3,13 +3,16 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CalendarDays, ChevronRight, MapPin, Tag, Users } from 'lucide-react';
 import { events, getEventBySlug, getRelatedEvents } from '@/data/events';
+import { getTestimonialForEvent } from '@/data/testimonials';
 import { formatGuests } from '@/lib/utils';
 import { siteConfig } from '@/lib/seo';
 import AnimatedText from '@/components/ui/AnimatedText';
-import ImageReveal from '@/components/ui/ImageReveal';
+import HeroVideo from '@/components/ui/HeroVideo';
 import MagneticButton from '@/components/ui/MagneticButton';
 import EventGallery from '@/components/events/EventGallery';
 import EventCard from '@/components/events/EventCard';
+import WedlockTouch from '@/components/events/WedlockTouch';
+import EventTestimonial from '@/components/events/EventTestimonial';
 
 interface EventDetailProps {
   params: { slug: string };
@@ -35,6 +38,7 @@ export default function EventDetailPage({ params }: EventDetailProps) {
 
   const related = getRelatedEvents(event.slug, 3);
   const galleryImages = [event.heroImage, ...event.gallery];
+  const testimonial = getTestimonialForEvent(event.slug);
 
   return (
     <>
@@ -84,13 +88,9 @@ export default function EventDetailPage({ params }: EventDetailProps) {
         </div>
 
         <div className="container-x mt-10">
-          <ImageReveal
-            src={event.heroImage}
-            alt={event.title}
-            className="aspect-[16/8] max-h-[620px] w-full rounded-[2rem]"
-            priority
-            sizes="100vw"
-          />
+          <div className="relative aspect-[16/8] max-h-[620px] w-full overflow-hidden rounded-[2rem]">
+            <HeroVideo src={event.heroVideo ?? '/videos/wedding1.mp4'} poster={event.heroImage} />
+          </div>
         </div>
       </section>
 
@@ -98,7 +98,7 @@ export default function EventDetailPage({ params }: EventDetailProps) {
       <section className="py-20 sm:py-28">
         <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.6fr]">
           <div>
-            <p className="font-alex text-4xl text-gold">The story</p>
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-gold">Where</p>
             <p className="mt-4 font-display text-2xl font-medium leading-snug text-ink">
               {event.location}
             </p>
@@ -111,12 +111,33 @@ export default function EventDetailPage({ params }: EventDetailProps) {
             </div>
           </div>
           <div>
-            {event.story.map((p, i) => (
-              <p key={i} className="mb-5 text-lg leading-relaxed text-ink/75 first:font-display first:text-2xl first:font-medium first:leading-relaxed first:text-ink">
-                {p}
-              </p>
-            ))}
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-gold">The Story</p>
+            <p className="mt-4 font-display text-2xl font-medium leading-snug text-ink sm:text-3xl">
+              {event.editorial}
+            </p>
+            <div className="mt-6">
+              {event.story.map((p, i) => (
+                <p key={i} className="mb-5 text-lg leading-relaxed text-ink/75">
+                  {p}
+                </p>
+              ))}
+            </div>
             <p className="mt-8 font-sacramento text-4xl text-ink/60">— produced by Wedlock</p>
+          </div>
+        </div>
+      </section>
+
+      {/* The Wedlock Touch */}
+      <section className="border-t border-ink/10 bg-base py-20 sm:py-28">
+        <div className="container-x">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-gold">The Wedlock Touch</p>
+            <h2 className="mt-3 font-display text-3xl font-medium text-ink sm:text-4xl">
+              Every detail was designed to feel effortless.
+            </h2>
+          </div>
+          <div className="mt-12">
+            <WedlockTouch highlights={event.highlights} />
           </div>
         </div>
       </section>
@@ -131,6 +152,13 @@ export default function EventDetailPage({ params }: EventDetailProps) {
         </div>
         <EventGallery images={galleryImages} title={event.title} />
       </section>
+
+      {/* Client review */}
+      {testimonial && (
+        <section className="container-x pb-20 sm:pb-28">
+          <EventTestimonial testimonial={testimonial} />
+        </section>
+      )}
 
       {/* Related */}
       <section className="border-t border-ink/10 py-20 sm:py-28">

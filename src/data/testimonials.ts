@@ -1,4 +1,5 @@
 import type { CelebrationCategory } from '@/types/celebration';
+import { events } from './events';
 
 export interface Testimonial {
   id: string;
@@ -7,6 +8,7 @@ export interface Testimonial {
   detail: string;
   location: string;
   category: CelebrationCategory;
+  eventSlug?: string;
   featured?: boolean;
 }
 
@@ -19,6 +21,7 @@ export const testimonials: Testimonial[] = [
     detail: 'Destination wedding, 320 guests',
     location: 'Udaipur',
     category: 'weddings',
+    eventSlug: 'aisha-arjun-udaipur',
     featured: true,
   },
   {
@@ -29,6 +32,7 @@ export const testimonials: Testimonial[] = [
     detail: 'Golden jubilee, 260 guests',
     location: 'Mumbai',
     category: 'anniversaries',
+    eventSlug: 'mehta-golden-jubilee-mumbai',
     featured: true,
   },
   {
@@ -39,6 +43,7 @@ export const testimonials: Testimonial[] = [
     detail: "Kids' birthday, 140 guests",
     location: 'Kolkata',
     category: 'birthdays',
+    eventSlug: 'zaras-enchanted-first-kolkata',
     featured: true,
   },
   {
@@ -49,6 +54,7 @@ export const testimonials: Testimonial[] = [
     detail: 'Roka & ring ceremony, 180 guests',
     location: 'New Delhi',
     category: 'engagements',
+    eventSlug: 'kabir-ananya-roka-delhi',
     featured: true,
   },
   {
@@ -59,6 +65,7 @@ export const testimonials: Testimonial[] = [
     detail: 'Family reunion, 68 guests',
     location: 'Kasauli',
     category: 'family-private',
+    eventSlug: 'kapoor-reunion-kasauli',
     featured: true,
   },
   {
@@ -69,6 +76,7 @@ export const testimonials: Testimonial[] = [
     detail: 'Destination wedding, 60 guests',
     location: 'Tuscany, Italy',
     category: 'weddings',
+    eventSlug: 'tuscan-i-do-florence',
   },
   {
     id: 't-sixty',
@@ -78,6 +86,17 @@ export const testimonials: Testimonial[] = [
     detail: '60th birthday, 90 guests',
     location: 'Alibaug',
     category: 'birthdays',
+    eventSlug: 'sixty-and-glorious-alibaug',
+  },
+  {
+    id: 't-goa-sangeet',
+    quote:
+      'Sand on a stage that never once felt like a compromise. The night we were told to expect rain, we got fireworks reflected in the sea instead.',
+    name: 'Farah & Imran Sheikh',
+    detail: 'Sangeet, 240 guests',
+    location: 'Goa',
+    category: 'weddings',
+    eventSlug: 'sangeet-under-stars-goa',
   },
   {
     id: 't-silver',
@@ -87,6 +106,7 @@ export const testimonials: Testimonial[] = [
     detail: 'Silver jubilee, 150 guests',
     location: 'Bengaluru',
     category: 'anniversaries',
+    eventSlug: 'silver-soiree-bengaluru',
   },
   {
     id: 't-proposal',
@@ -96,6 +116,7 @@ export const testimonials: Testimonial[] = [
     detail: 'Surprise proposal & engagement, 120 guests',
     location: 'Jaipur',
     category: 'engagements',
+    eventSlug: 'proposal-to-party-jaipur',
   },
   {
     id: 't-nani',
@@ -105,6 +126,17 @@ export const testimonials: Testimonial[] = [
     detail: '80th birthday gathering, 110 guests',
     location: 'Kolkata',
     category: 'family-private',
+    eventSlug: 'nanis-eightieth-kolkata',
+  },
+  {
+    id: 't-kerala-backwaters',
+    quote:
+      'A floating mandap, eleven houseboats and a monsoon shower that somehow made the photographs better. Our guests still talk about arriving by water.',
+    name: 'Meenu & Arun Pillai',
+    detail: 'Backwater wedding, 150 guests',
+    location: 'Kumarakom',
+    category: 'weddings',
+    eventSlug: 'vows-by-backwaters-kerala',
   },
 ];
 
@@ -112,6 +144,14 @@ export function getTestimonialsByCategory(category: CelebrationCategory, count =
   const mine = testimonials.filter((t) => t.category === category);
   const featured = testimonials.filter((t) => t.featured && t.category !== category);
   return [...mine, ...featured].slice(0, count);
+}
+
+export function getTestimonialForEvent(slug: string) {
+  return (
+    testimonials.find((t) => t.eventSlug === slug) ??
+    testimonials.find((t) => t.category === events.find((e) => e.slug === slug)?.category) ??
+    null
+  );
 }
 
 export const featuredTestimonials = testimonials.filter((t) => t.featured);
