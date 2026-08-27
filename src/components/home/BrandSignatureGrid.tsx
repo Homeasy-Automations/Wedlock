@@ -37,8 +37,8 @@ function FloralCluster({ className }: { className?: string }) {
     <div className={className} aria-hidden>
       <div className="relative h-full w-full text-ink">
         <GiFlowerTwirl className="absolute left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 opacity-90" />
-        <GiVineFlower className="absolute -left-1 -top-2 h-[45%] w-[45%] rotate-[-18deg] text-gold" />
-        <GiLotusFlower className="absolute -bottom-2 -right-1 h-[42%] w-[42%] rotate-[14deg] text-burgundy/80" />
+        <GiVineFlower className="absolute -left-1/2 -top-2 h-[45%] w-[45%] rotate-[-18deg] text-gold" />
+        <GiLotusFlower className="absolute -bottom-3 -right-1/2 h-[42%] w-[42%] rotate-[14deg] text-burgundy/80" />
       </div>
     </div>
   );
@@ -51,8 +51,8 @@ function Monogram() {
       <span className="font-display text-[9rem] font-medium leading-none text-ink sm:text-[11rem]">
         W
       </span>
-      <GiFlowerPot className="absolute h-14 w-14 -translate-y-1 translate-x-16 text-gold/90 sm:h-16 sm:w-16 sm:translate-x-20" />
-      <GiFlowers className="absolute h-10 w-10 translate-y-16 -translate-x-16 text-burgundy/70 sm:h-12 sm:w-12 sm:-translate-x-20" />
+      <GiFlowerPot className="absolute h-14 w-14 -translate-y-16 translate-x-10 text-gold/90 sm:h-16 sm:w-16 sm:translate-x-32" />
+      <GiFlowers className="absolute h-10 w-10 translate-y-16 -translate-x-16 text-burgundy/70 sm:h-12 sm:w-12 sm:-translate-x-32" />
     </div>
   );
 }
@@ -60,13 +60,14 @@ function Monogram() {
 export default function BrandSignatureGrid() {
   return (
     <section aria-labelledby="brand-signature-heading" className="bg-cream">
-      <div className="grid grid-cols-1 sm:grid-cols-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 object">
         {topPhotos.map((photo) => (
           <ImageReveal
             key={photo.src}
             src={photo.src}
             alt={photo.alt}
             className="aspect-[4/3] sm:aspect-[4/2.5]"
+            imgClassName="object-top"
             sizes="(max-width: 640px) 100vw, 33vw"
           />
         ))}
