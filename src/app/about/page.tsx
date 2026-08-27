@@ -62,10 +62,10 @@ const team = [
 ];
 
 const milestones = [
-  { year: '2019', text: 'Wedlock is founded out of Patna, built on the lineage of Eventoss, the region\u2019s leading marketing and events agency.' },
+  { year: '2014', text: 'Wedlock is founded out of Patna, built on the lineage of Eventoss, the region\u2014s leading marketing and events agency.' },
   { year: '2021', text: 'A steady run of Patna weddings builds the reputation Wedlock is known for today: comfort matched with grandeur.' },
   { year: '2023', text: 'The destination desk takes shape, taking Wedlock celebrations beyond Bihar for the first time.' },
-  { year: '2024', text: 'Five years in, Wedlock has produced some of the region\u2019s most splendid weddings — with teams now active in Patna, Ranchi and Delhi.' },
+  { year: '2024', text: 'Ten years in, Wedlock has produced some of the region\u2014s most splendid weddings — with teams now active in Patna, Ranchi and Delhi.' },
   { year: 'Today', text: 'Still a hands-on team of planners, stylists and producers turning every dream day into what we call \u201cA Splendid Memoir.\u201d' },
 ];
 
@@ -83,12 +83,12 @@ export default function AboutPage() {
               delay={0.25}
               className="mt-5 font-display text-4xl font-medium leading-[1.08] tracking-tight text-ink sm:text-6xl"
             />
-            <p className="mt-6 text-base leading-relaxed text-ink/65 sm:text-lg">
+            <p className="mt-6 text-ink leading-relaxed text-ink/65 sm:text-lg">
               A celebration is the one day an entire family gathers in a single frame. Our work is
               to protect that frame — to absorb every logistics problem, vendor wobble and weather
               tantrum so completely that the family inside the frame never feels the wind.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-ink/65 sm:text-lg">
+            <p className="mt-4 text-ink leading-relaxed text-ink/65 sm:text-lg">
               We are planners, stylists, carpenters, light designers, choreographers, travel agents
               and crisis negotiators. Mostly, we are people who love what a well-produced celebration
               does to a family.
@@ -154,7 +154,7 @@ export default function AboutPage() {
               >
                 <p className="font-sacramento text-5xl text-gold/70">{String(i + 1).padStart(2, '0')}</p>
                 <h3 className="mt-4 font-display text-2xl font-medium text-ink">{v.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-ink/60 sm:text-base">{v.body}</p>
+                <p className="mt-3 text-sm leading-relaxed text-ink/60 sm:text-ink/60">{v.body}</p>
               </div>
             ))}
           </div>
@@ -171,7 +171,7 @@ export default function AboutPage() {
               as="h2"
               className="mt-4 font-display text-4xl font-medium tracking-tight text-ink sm:text-5xl"
             />
-            <p className="mt-4 text-base leading-relaxed text-ink/60">
+            <p className="mt-4 text-ink leading-relaxed text-ink/60">
               No account managers relaying messages — the people below sit in your first planning
               meeting and stand on your venue floor.
             </p>
