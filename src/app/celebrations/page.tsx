@@ -75,7 +75,7 @@ export default function CelebrationsHubPage() {
                   {c.name}
                 </h2>
                 <p className="mt-3 font-alex text-2xl leading-snug text-ink/60">{c.tagline}</p>
-                <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink/60 sm:text-base">
+                <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink/60 sm:text-ink/50">
                   {c.description}
                 </p>
                 <div className="mt-6 flex flex-wrap items-center gap-2">
