@@ -15,7 +15,7 @@ export const celebrations: Celebration[] = [
     description:
       'From the roka to the reception, we plan, design, produce and execute weddings that feel inevitable — every ritual honoured, every guest enchanted. Destination weddings are our signature.',
     heroKicker: 'Two families. One flawless production.',
-    heroImage: 'https://wedlock.co.in/wp-content/uploads/2024/03/18.jpg',
+    heroImage: '/images/weddings/wedding1.webp',
     heroVideo: '/videos/stage-decor4.mp4',
     accent: '#C9A24B',
     accentInk: '#6B5420',
@@ -37,7 +37,7 @@ export const celebrations: Celebration[] = [
     description:
       'From a one-year-old’s enchanted forest to a 75th black-tie dinner — we produce birthdays with the same rigour as our biggest weddings.',
     heroKicker: 'Make a wish. We’ll handle the rest.',
-    heroImage: 'https://picsum.photos/seed/wedlock-hero-birthdays/1600/1000',
+    heroImage: '/images/birthdays/birthday1.png',
     heroVideo: '/videos/stage-decor1.mp4',
     accent: '#E2725B',
     accentInk: '#7A3121',
@@ -59,7 +59,7 @@ export const celebrations: Celebration[] = [
     description:
       'Silver jubilees, golden jubilees, vow renewals and quiet romantic dinners — celebrations of staying power, designed with tenderness.',
     heroKicker: 'Every year, a chapter worth staging.',
-    heroImage: 'https://picsum.photos/seed/wedlock-hero-anniversaries/1600/1000',
+    heroImage: '/images/anniversaries/anniversary1.png',
     heroVideo: '/videos/wedding4.mp4',
     accent: '#D98A90',
     accentInk: '#8A4B52',
@@ -81,7 +81,7 @@ export const celebrations: Celebration[] = [
     description:
       'Rokas, ring ceremonies, cocktail evenings and every pre-wedding function — the opening act of your wedding story, produced to set the tone.',
     heroKicker: 'Before the vows, the promise.',
-    heroImage: 'https://picsum.photos/seed/wedlock-hero-engagements/1600/1000',
+    heroImage: '/images/engagements/engagement1.webp',
     heroVideo: '/videos/stage-decor3.mp4',
     accent: '#8E3B47',
     accentInk: '#5C242D',
@@ -103,7 +103,7 @@ export const celebrations: Celebration[] = [
     description:
       'Reunions, house parties, dinner celebrations and life’s quiet milestones — intimate productions for the people who matter most.',
     heroKicker: 'Small rooms. Enormous memories.',
-    heroImage: 'https://picsum.photos/seed/wedlock-hero-family-private/1600/1000',
+    heroImage: '/images/family-private/family1.png',
     heroVideo: '/videos/stage-decor5.mp4',
     accent: '#7C8B6F',
     accentInk: '#46523D',

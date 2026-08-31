@@ -43,25 +43,25 @@ export const engagementServices: SubService[] = [
       'Two families, one dance floor — choreography, live percussion and performances rehearsed to joy.',
     image: 'https://picsum.photos/seed/wedlock-sangeet/1200/900',
   },
-  {
-    slug: 'mehendi',
-    title: 'Mehendi',
-    description:
-      'Afternoon mehendi with floral swings, chaat counters and folk singers under billowing canopies.',
-    image: 'https://picsum.photos/seed/wedlock-mehendi/1200/900',
-  },
-  {
-    slug: 'haldi',
-    title: 'Haldi',
-    description:
-      'Golden-hour haldi mornings — turmeric, phoolon ki holi and bare feet on marigold-strewn lawns.',
-    image: 'https://picsum.photos/seed/wedlock-haldi/1200/900',
-  },
+  // {
+  //   slug: 'mehendi',
+  //   title: 'Mehendi',
+  //   description:
+  //     'Afternoon mehendi with floral swings, chaat counters and folk singers under billowing canopies.',
+  //   image: 'https://picsum.photos/seed/wedlock-mehendi/1200/900',
+  // },
+  // {
+  //   slug: 'haldi',
+  //   title: 'Haldi',
+  //   description:
+  //     'Golden-hour haldi mornings — turmeric, phoolon ki holi and bare feet on marigold-strewn lawns.',
+  //   image: 'https://picsum.photos/seed/wedlock-haldi/1200/900',
+  // },
   {
     slug: 'engagement-parties',
     title: 'Engagement Parties',
     description:
-      'Modern engagement parties — DJ nights, themed soirées and rooftop celebrations for the newly promised.',
+      'Modern engagement parties — DJ nights, themed soirées and rooftop celebrations.',
     image: 'https://picsum.photos/seed/wedlock-engagement-parties/1200/900',
   },
   {
