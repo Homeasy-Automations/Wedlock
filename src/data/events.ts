@@ -51,7 +51,7 @@ export const events: EventItem[] = [
       'The Mehta children came to us with one instruction: “Make it feel like 1975 looked.” We rebuilt their parents’ wedding era with sepia photo corridors, a vintage car entry and a 26-foot gallery wall tracing five decades of family life.',
       'The couple renewed their vows with 37 grandchildren and great-grandchildren as witnesses. There was not a dry eye in the ballroom — ours included.',
     ],
-    heroImage: 'https://picsum.photos/seed/wedlock-anniversary-mehta-hero/1200/900',
+    heroImage: '/images/anniversaries/anniversary2.jpg',
     heroVideo: '/videos/wedding4.mp4',
     gallery: [
       'https://picsum.photos/seed/wedlock-anniversary-mehta-1/1200/900',
@@ -246,13 +246,13 @@ export const events: EventItem[] = [
       'The family asked for a sangeet that “didn’t feel like a ballroom with sand in it.” We built an open-air stage on the high-tide line, rigged 1,200 festoon bulbs into a wave-shaped canopy and flew in a dhol troupe to back the family performances.',
       'Rain threatened at hour —2; our weather plan (a transparent marquee kept on standby rig) stayed in the truck. The stars did their part.',
     ],
-    heroImage: 'https://wedlock.co.in/wp-content/uploads/2024/03/DSC03569-scaled.jpg',
+    heroImage: '/images/events/sangeet1.png',
     heroVideo: '/videos/wedding2.mp4',
     gallery: [
       'https://wedlock.co.in/wp-content/uploads/2024/03/DSC04334-scaled.jpg',
       'https://wedlock.co.in/wp-content/uploads/2024/03/DSC04664-1-scaled.jpg',
       'https://wedlock.co.in/wp-content/uploads/2024/03/image0.jpeg',
-      'https://wedlock.co.in/wp-content/uploads/2024/05/image0.jpeg',
+      '/images/events/sangeet2.png',
     ],
     highlights: [
       { icon: 'venue', title: 'Venue & Décor', description: 'An open-air stage rigged directly on the high-tide line, with 1,200 festoon bulbs woven into a wave-shaped canopy above the dance floor.' },

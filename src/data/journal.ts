@@ -10,7 +10,7 @@ export const articles: Article[] = [
     date: '2026-02-14',
     readTime: '8 min read',
     author: 'Team Wedlock',
-    heroImage: 'https://picsum.photos/seed/wedlock-real-udaipur/1200/900',
+    heroImage: '/images/weddings/wedding2.png',
     featured: true,
     body: [
       {
