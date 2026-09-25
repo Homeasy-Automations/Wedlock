@@ -53,7 +53,7 @@ export const articles: Article[] = [
     date: '2026-01-28',
     readTime: '10 min read',
     author: 'Advaita Roy, Head of Destination Desk',
-    heroImage: 'https://picsum.photos/seed/wedlock-guide-timeline/1200/900',
+    heroImage: '/images/journal/guide-timeline.jpg',
     featured: true,
     body: [
       {
@@ -96,7 +96,7 @@ export const articles: Article[] = [
     date: '2026-01-06',
     readTime: '6 min read',
     author: 'Ishita Bannerjee, Creative Director',
-    heroImage: 'https://picsum.photos/seed/wedlock-trends-2026/1200/900',
+    heroImage: '/images/journal/trends-2026.jpg',
     featured: true,
     body: [
       {
@@ -141,7 +141,7 @@ export const articles: Article[] = [
     date: '2025-12-12',
     readTime: '7 min read',
     author: 'Team Wedlock',
-    heroImage: 'https://picsum.photos/seed/wedlock-real-mehta/1200/900',
+    heroImage: '/images/journal/real-mehta.jpg',
     body: [
       {
         heading: 'A commission of memory',
@@ -174,7 +174,7 @@ export const articles: Article[] = [
     date: '2025-11-18',
     readTime: '5 min read',
     author: 'Advaita Roy',
-    heroImage: 'https://picsum.photos/seed/wedlock-trends-small/1200/900',
+    heroImage: '/images/journal/trends-small.jpg',
     body: [
       {
         paragraphs: [
@@ -204,7 +204,7 @@ export const articles: Article[] = [
     date: '2025-10-02',
     readTime: '6 min read',
     author: 'Kabir Anand, Head of Production',
-    heroImage: 'https://picsum.photos/seed/wedlock-guide-rain/1200/900',
+    heroImage: '/images/journal/guide-rain.jpg',
     body: [
       {
         paragraphs: [
@@ -236,7 +236,7 @@ export const articles: Article[] = [
     date: '2025-08-30',
     readTime: '7 min read',
     author: 'Team Wedlock',
-    heroImage: 'https://picsum.photos/seed/wedlock-behind-reunion/1200/900',
+    heroImage: '/images/journal/behind-reunion.jpg',
     body: [
       {
         heading: 'Gathering with structure, not schedules',
@@ -268,7 +268,7 @@ export const articles: Article[] = [
     date: '2025-07-15',
     readTime: '6 min read',
     author: 'Advaita Roy',
-    heroImage: 'https://picsum.photos/seed/wedlock-guide-choosing/1200/900',
+    heroImage: '/images/journal/guide-choosing.jpg',
     body: [
       {
         paragraphs: [

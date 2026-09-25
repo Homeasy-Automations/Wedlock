@@ -33,7 +33,10 @@ export default function EventsPage({ searchParams }: EventsPageProps) {
     <>
       <section className="relative flex min-h-[58svh] items-end overflow-hidden bg-ink">
         <div className="absolute inset-0 scale-110">
-          <HeroVideo src="/videos/stage-decor2.mp4" />
+          <HeroVideo
+            src="/videos/barat.mp4"
+            poster="/images/wedlock/DSC04664-1-scaled.jpg"
+          />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/35" />
         <div className="container-x relative z-10 pb-14 pt-36 sm:pt-44">

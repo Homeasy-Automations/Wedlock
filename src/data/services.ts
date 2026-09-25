@@ -19,7 +19,7 @@ export const services: Service[] = [
       'Transparent budget tracking & vendor negotiations',
       'Venue scouting across India and 40+ international destinations',
     ],
-    image: 'https://wedlock.co.in/wp-content/uploads/2024/05/Wedding-Planner-scaled.jpg',
+    image: '/images/wedlock/Wedding-Planner-scaled.jpg',
   },
   {
     slug: 'decor-and-styling',
@@ -32,7 +32,7 @@ export const services: Service[] = [
       'In-house styling studio with fabrication partners',
       'Floral design, furniture, linen, candlelight & scent',
     ],
-    image: 'https://wedlock.co.in/wp-content/uploads/2024/05/20230217_185854-1-scaled.jpg',
+    image: '/images/wedlock/20230217_185854-1-scaled.jpg',
   },
   {
     slug: 'entertainment',
@@ -45,7 +45,7 @@ export const services: Service[] = [
       'Choreography direction for family performances',
       'Show-calling and stage management on the night',
     ],
-    image: 'https://wedlock.co.in/wp-content/uploads/2024/05/2-1.jpg',
+    image: '/images/wedlock/2-1.jpg',
   },
   {
     slug: 'hospitality',
@@ -58,7 +58,7 @@ export const services: Service[] = [
       'Concierge gifting & welcome experiences',
       'On-ground hospitality teams at every venue',
     ],
-    image: 'https://wedlock.co.in/wp-content/uploads/2024/05/3-1.jpg',
+    image: '/images/wedlock/3-1.jpg',
   },
   {
     slug: 'artist-and-celebrity',
@@ -71,7 +71,7 @@ export const services: Service[] = [
       'Contracts, riders, travel & rehearsal coordination',
       'Stage, sound & security per artist specification',
     ],
-    image: 'https://wedlock.co.in/wp-content/uploads/2024/05/201A2415-Photography-scaled.jpg',
+    image: '/images/wedlock/201A2415-Photography-scaled.jpg',
   },
   {
     slug: 'production',
@@ -84,6 +84,6 @@ export const services: Service[] = [
       'Light & sound design with broadcast-grade crews',
       'Weather contingencies and on-day command centres',
     ],
-    image: 'https://wedlock.co.in/wp-content/uploads/2024/05/Destination-Wedding-scaled.jpg',
+    image: '/images/wedlock/Destination-Wedding-scaled.jpg',
   },
 ];

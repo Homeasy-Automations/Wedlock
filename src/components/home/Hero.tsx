@@ -23,12 +23,13 @@ export default function Hero() {
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
         <div className={reduce ? 'absolute inset-0' : 'absolute inset-0 animate-kenburns'}>
           <HeroVideo
-            src="/videos/wedding1.mp4"
-            poster="https://wedlock.co.in/wp-content/uploads/2024/04/image0-1024x682.jpeg"
+            src="/videos/hero-wedding.mp4"
+            poster="/images/hero-wedding-poster.jpg"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-ink/25" />
         <div className="absolute inset-0 bg-[radial-gradient(75%_60%_at_50%_80%,transparent_0%,rgba(42,33,28,0.55)_100%)]" />
+        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-ink/90 via-ink/45 to-transparent pointer-events-none z-10" />
       </motion.div>
 
       {/* Content */}

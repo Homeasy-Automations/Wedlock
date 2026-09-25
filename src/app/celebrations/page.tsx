@@ -21,7 +21,10 @@ export default function CelebrationsHubPage() {
       {/* Hub hero */}
       <section className="relative flex min-h-[72svh] items-center overflow-hidden bg-ink">
         <div className="absolute inset-0 scale-110">
-          <HeroVideo src="/videos/wedding2.mp4" />
+          <HeroVideo
+            src="/videos/full wedding.mp4"
+            poster="/images/wedlock/20230217_185854-1-scaled.jpg"
+          />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/40" />
         <div className="container-x relative z-10 mx-auto max-w-3xl pt-24 text-center">

@@ -39,25 +39,25 @@ const team = [
     name: 'Advaita Roy',
     role: 'Founder & Head of Destination Desk',
     note: 'Has scouted 40+ wedding destinations and can recite the sunset time of every Udaipur terrace by month.',
-    image: 'https://picsum.photos/seed/wedlock-team-advaita/600/800',
+    image: '/images/team/advaita.jpg',
   },
   {
     name: 'Ishita Bannerjee',
     role: 'Creative Director',
     note: 'Former textile designer; believes every celebration has one correct palette and it is her job to find it.',
-    image: 'https://picsum.photos/seed/wedlock-team-ishita/600/800',
+    image: '/images/team/ishita.jpg',
   },
   {
     name: 'Kabir Anand',
     role: 'Head of Production',
     note: 'The man behind the ninety-minute rain flip. Sleeps well during monsoon. Nobody knows how.',
-    image: 'https://picsum.photos/seed/wedlock-team-kabir/600/800',
+    image: '/images/team/kabir.jpg',
   },
   {
     name: 'Meher Chatterjee',
     role: 'Director, Hospitality & Guest Experience',
     note: 'Runs guest desks like five-star front offices; has never once lost a nani at an airport.',
-    image: 'https://picsum.photos/seed/wedlock-team-meher/600/800',
+    image: '/images/team/meher.jpg',
   },
 ];
 
@@ -97,13 +97,13 @@ export default function AboutPage() {
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
               <HeroVideo
-                src="/videos/stage-decor6.mp4"
-                poster="https://wedlock.co.in/wp-content/uploads/2024/04/20210701_192754-scaled.jpg"
+                src="/videos/Stage decor1.mp4"
+                poster="/images/wedlock/20210701_192754-scaled.jpg"
                 className="h-full w-full rounded-[2rem] object-cover"
               />
             </div>
             <ImageReveal
-              src="https://wedlock.co.in/wp-content/uploads/2024/05/20230217_190327-1.jpg"
+              src="/images/wedlock/20230217_190327-1.jpg"
               alt="Detail of a Wedlock tablescape"
               className="absolute -bottom-10 -right-4 hidden aspect-square w-52 rounded-[1.5rem] border-[6px] border-base shadow-2xl sm:block lg:-right-10 lg:w-64"
               delay={0.25}

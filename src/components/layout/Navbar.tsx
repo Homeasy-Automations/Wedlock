@@ -43,14 +43,24 @@ export default function Navbar() {
   const isActive = (href: string) =>
     pathname === href || pathname.startsWith(`${href}/`);
 
+  const isDarkHero =
+    !scrolled &&
+    (pathname === '/' ||
+      pathname.startsWith('/celebrations') ||
+      pathname.startsWith('/events') ||
+      pathname.startsWith('/services') ||
+      pathname.startsWith('/destinations'));
+
   return (
     <>
       <header
         className={cn(
           'fixed inset-x-0 top-0 z-50 transition-all duration-500',
           scrolled
-            ? 'bg-base/85 py-3 shadow-[0_8px_30px_-18px_rgba(42,33,28,0.35)] backdrop-blur-xl'
-            : 'bg-transparent py-5',
+            ? 'bg-base/90 py-3 shadow-[0_8px_30px_-18px_rgba(42,33,28,0.35)] backdrop-blur-xl'
+            : isDarkHero
+              ? 'bg-gradient-to-b from-black/80 via-black/35 to-transparent py-5'
+              : 'bg-transparent py-5',
         )}
       >
         <nav className="container-x flex items-center justify-between gap-6">
@@ -59,11 +69,23 @@ export default function Navbar() {
             aria-label="Wedlock — home"
             className="group flex items-baseline gap-1.5"
           >
-            <span className="font-sacramento text-[2rem] leading-none text-ink transition-colors group-hover:text-gold">
+            <span
+              className={cn(
+                'font-sacramento text-[2.5rem] leading-none transition-colors duration-500',
+                !scrolled
+                  ? 'text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)] group-hover:text-gold'
+                  : 'text-ink group-hover:text-gold',
+              )}
+            >
               Wedlock
             </span>
             <span
-              className="mb-1 inline-block h-1.5 w-1.5 rounded-full bg-gold"
+              className={cn(
+                'mb-1 inline-block h-2 w-2 rounded-full transition-all duration-500',
+                !scrolled
+                  ? 'bg-gold shadow-[0_0_12px_rgba(201,162,75,0.9)]'
+                  : 'bg-gold shadow-[0_0_8px_rgba(201,162,75,0.6)]',
+              )}
               aria-hidden
             />
           </Link>
@@ -73,10 +95,12 @@ export default function Navbar() {
             <div className="group relative">
               <button
                 className={cn(
-                  'flex items-center gap-1 rounded-full px-4 py-2.5 text-[13px] font-semibold tracking-wide transition-colors',
+                  'flex items-center gap-1 rounded-full px-4 py-2 text-[13.5px] font-semibold tracking-wide transition-colors duration-500',
                   isActive('/celebrations')
-                    ? 'text-gold'
-                    : 'text-ink/75 hover:text-ink',
+                    ? 'text-gold font-bold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                    : !scrolled
+                      ? 'text-white hover:text-gold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                      : 'text-ink/80 hover:text-ink',
                 )}
                 aria-haspopup="true"
               >
@@ -133,10 +157,12 @@ export default function Navbar() {
                 key={l.href}
                 href={l.href}
                 className={cn(
-                  'rounded-full px-4 py-2.5 text-[13px] font-semibold tracking-wide transition-colors',
+                  'rounded-full px-4 py-2 text-[13.5px] font-semibold tracking-wide transition-colors duration-500',
                   isActive(l.href)
-                    ? 'text-gold'
-                    : 'text-ink/75 hover:text-ink',
+                    ? 'text-gold font-bold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                    : !scrolled
+                      ? 'text-white hover:text-gold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                      : 'text-ink/80 hover:text-ink',
                 )}
               >
                 {l.label}
@@ -146,20 +172,29 @@ export default function Navbar() {
             <Link
               href="/contact"
               className={cn(
-                'rounded-full px-4 py-2.5 text-[13px] font-semibold tracking-wide transition-colors',
+                'rounded-full px-4 py-2 text-[13.5px] font-semibold tracking-wide transition-colors duration-500',
                 isActive('/contact')
-                  ? 'text-gold'
-                  : 'text-ink/75 hover:text-ink',
+                  ? 'text-gold font-bold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                  : !scrolled
+                    ? 'text-white hover:text-gold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                    : 'text-ink/80 hover:text-ink',
               )}
             >
               Contact
             </Link>
+          </div>
 
+          <div className="hidden lg:block">
             <MagneticButton
               href="/plan-your-celebration"
-              variant="ink"
+              variant={isDarkHero ? 'gold' : 'ink'}
               size="sm"
-              className="ml-3"
+              className={cn(
+                'font-bold transition-all duration-500',
+                isDarkHero
+                  ? 'shadow-[0_4px_20px_rgba(201,162,75,0.45)] hover:shadow-[0_4px_28px_rgba(201,162,75,0.7)]'
+                  : 'shadow-md',
+              )}
             >
               Plan Your Celebration
             </MagneticButton>
@@ -168,7 +203,12 @@ export default function Navbar() {
           <div className="flex items-center gap-2 lg:hidden">
             <Link
               href="/plan-your-celebration"
-              className="hidden rounded-full bg-ink px-4 py-2 text-xs font-bold tracking-wide text-cream sm:block"
+              className={cn(
+                'hidden rounded-full px-4 py-2 text-xs font-bold tracking-wide transition-all duration-500 sm:block shadow-md',
+                isDarkHero
+                  ? 'bg-gold text-ink hover:bg-cream shadow-[0_2px_12px_rgba(201,162,75,0.4)]'
+                  : 'bg-ink text-cream hover:bg-espresso',
+              )}
             >
               Plan Your Celebration
             </Link>
@@ -176,7 +216,12 @@ export default function Navbar() {
             <button
               onClick={() => setOpen(true)}
               aria-label="Open menu"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-ink/15 bg-base/70 text-ink backdrop-blur"
+              className={cn(
+                'flex h-11 w-11 items-center justify-center rounded-full backdrop-blur-md transition-all duration-500 shadow-md',
+                !scrolled
+                  ? 'border border-white/20 bg-black/40 text-white hover:bg-black/60 hover:text-gold'
+                  : 'border border-ink/15 bg-base/70 text-ink hover:bg-base',
+              )}
             >
               <Menu className="h-5 w-5" />
             </button>

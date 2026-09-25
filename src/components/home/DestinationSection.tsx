@@ -13,13 +13,13 @@ export default function DestinationSection() {
       <div className="container-x grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
         <div className="order-2 grid grid-cols-2 gap-5 lg:order-1">
           <ImageReveal
-            src="https://wedlock.co.in/wp-content/uploads/2024/04/20230217_213554-1-682x1024.jpg"
+            src="/images/wedlock/20230217_213554-1-682x1024.jpg"
             alt="Palace destination wedding venue in Udaipur"
             className="aspect-[3/4] rounded-2xl"
             sizes="(max-width: 1024px) 50vw, 25vw"
           />
           <ImageReveal
-            src="https://wedlock.co.in/wp-content/uploads/2024/04/A50A1563-819x1024.jpg"
+            src="/images/destinations/tuscany-hero.jpg"
             alt="Vineyard villa destination wedding in Tuscany"
             className="mt-10 aspect-[3/4] rounded-2xl"
             delay={0.15}

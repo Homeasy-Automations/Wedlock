@@ -8,7 +8,7 @@ export default function FinalCTA() {
     <section className="relative overflow-hidden py-28 sm:py-40">
       <div className="absolute inset-0">
         <Image
-          src="https://wedlock.co.in/wp-content/uploads/2024/04/A50A2571EDITED.jpg"
+          src="/images/wedlock/Destination-Wedding-scaled.jpg"
           alt=""
           fill
           sizes="100vw"

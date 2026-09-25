@@ -12,11 +12,11 @@ export const destinations: Destination[] = [
     bestSeason: 'October – March',
     idealGuests: '150 – 800 guests',
     access: 'Direct flights from Delhi, Mumbai, Bengaluru; 45 min from airport to lake district',
-    heroImage: 'https://wedlock.co.in/wp-content/uploads/2024/04/20230217_213554-1-682x1024.jpg',
+    heroImage: '/images/wedlock/20230217_213554-1-682x1024.jpg',
     gallery: [
-      'https://wedlock.co.in/wp-content/uploads/2024/04/image0-1024x682.jpeg',
-      'https://wedlock.co.in/wp-content/uploads/2024/04/A50A1563-819x1024.jpg',
-      'https://wedlock.co.in/wp-content/uploads/2024/04/image2-682x1024.jpeg',
+      '/images/wedlock/image0-1024x682.jpeg',
+      '/images/wedlock/A50A1563-819x1024.jpg',
+      '/images/wedlock/image2-682x1024.jpeg',
     ],
     why: [
       {
@@ -54,11 +54,11 @@ export const destinations: Destination[] = [
     bestSeason: 'October – March',
     idealGuests: '200 – 1,200 guests',
     access: 'International airport; 30–50 min to venue districts; excellent hotel inventory',
-    heroImage: 'https://picsum.photos/seed/wedlock-jaipur/1200/900',
+    heroImage: '/images/destinations/jaipur.jpg',
     gallery: [
-      'https://picsum.photos/seed/wedlock-jaipur-1/1200/900',
-      'https://picsum.photos/seed/wedlock-jaipur-2/1200/900',
-      'https://picsum.photos/seed/wedlock-jaipur-3/1200/900',
+      '/images/destinations/jaipur-1.jpg',
+      '/images/destinations/jaipur-2.jpg',
+      '/images/destinations/jaipur-3.jpg',
     ],
     why: [
       { title: 'Royal venues, real infrastructure', text: 'Forts and palaces backed by 5,000+ hotel rooms and a major airport — scale and convenience rarely come together this well.' },
@@ -83,11 +83,11 @@ export const destinations: Destination[] = [
     bestSeason: 'November – February',
     idealGuests: '80 – 500 guests',
     access: 'Two airports (GOI & GOX); private transfers 20–70 min by beach belt',
-    heroImage: 'https://wedlock.co.in/wp-content/uploads/2024/04/image1-1024x682.jpeg',
+    heroImage: '/images/wedlock/image1-1024x682.jpeg',
     gallery: [
-      'https://wedlock.co.in/wp-content/uploads/2024/04/20220123_114444-1024x768.jpg',
-      'https://wedlock.co.in/wp-content/uploads/2024/04/20220123_114444-1-1024x768.jpg',
-      'https://wedlock.co.in/wp-content/uploads/2024/04/20210701_192754-scaled.jpg',
+      '/images/wedlock/20220123_114444-1024x768.jpg',
+      '/images/wedlock/20220123_114444-1-1024x768.jpg',
+      '/images/wedlock/20210701_192754-scaled.jpg',
     ],
     why: [
       { title: 'Sea in every frame', text: 'Cliff-top vows, beach mandaps, boat after-parties — the Arabian Sea becomes your wedding’s recurring character.' },
@@ -112,11 +112,11 @@ export const destinations: Destination[] = [
     bestSeason: 'September – March',
     idealGuests: '60 – 300 guests',
     access: 'Fly into Kochi (COK); backwater venues 90 min by road or jetty',
-    heroImage: 'https://picsum.photos/seed/wedlock-kerala/1200/900',
+    heroImage: '/images/destinations/kerala.jpg',
     gallery: [
-      'https://picsum.photos/seed/wedlock-kerala-1/1200/900',
-      'https://picsum.photos/seed/wedlock-kerala-2/1200/900',
-      'https://picsum.photos/seed/wedlock-kerala-3/1200/900',
+      '/images/destinations/kerala-1.jpg',
+      '/images/destinations/kerala-2.jpg',
+      '/images/destinations/kerala-3.jpg',
     ],
     why: [
       { title: 'Water as the venue', text: 'Floating stages, houseboat processions and jetty receptions — a wedding geometry found nowhere else in India.' },
@@ -140,11 +140,11 @@ export const destinations: Destination[] = [
     bestSeason: 'April – October',
     idealGuests: '40 – 200 guests',
     access: 'Fly into Denpasar (DPS) via Singapore/Kuala Lumpur; visa-on-arrival for Indians',
-    heroImage: 'https://picsum.photos/seed/wedlock-bali/1200/900',
+    heroImage: '/images/destinations/bali.jpg',
     gallery: [
-      'https://picsum.photos/seed/wedlock-bali-1/1200/900',
-      'https://picsum.photos/seed/wedlock-bali-2/1200/900',
-      'https://picsum.photos/seed/wedlock-bali-3/1200/900',
+      '/images/destinations/bali-1.jpg',
+      '/images/destinations/bali-2.jpg',
+      '/images/destinations/bali-3.jpg',
     ],
     why: [
       { title: 'World-class villa economy', text: 'Entire estates with private chapels and staff — often at half the cost of an equivalent Indian palace.' },
@@ -168,11 +168,11 @@ export const destinations: Destination[] = [
     bestSeason: 'November – April',
     idealGuests: '60 – 400 guests',
     access: 'Direct flights from major Indian metros; 4–5 hours, no visa hassle',
-    heroImage: 'https://picsum.photos/seed/wedlock-phuket/1200/900',
+    heroImage: '/images/destinations/phuket.jpg',
     gallery: [
-      'https://picsum.photos/seed/wedlock-phuket-1/1200/900',
-      'https://picsum.photos/seed/wedlock-phuket-2/1200/900',
-      'https://picsum.photos/seed/wedlock-phuket-3/1200/900',
+      '/images/destinations/phuket-1.jpg',
+      '/images/destinations/phuket-2.jpg',
+      '/images/destinations/phuket-3.jpg',
     ],
     why: [
       { title: 'Resort machinery', text: 'Properties here host Indian weddings weekly — kitchens, banquet teams and decorators already speak the language.' },
@@ -196,11 +196,11 @@ export const destinations: Destination[] = [
     bestSeason: 'May – September',
     idealGuests: '40 – 150 guests',
     access: 'Fly into Florence or Pisa; villa estates 40–90 min drive',
-    heroImage: 'https://wedlock.co.in/wp-content/uploads/2024/04/A50A2571EDITED.jpg',
+    heroImage: '/images/destinations/tuscany-hero.jpg',
     gallery: [
-      'https://wedlock.co.in/wp-content/uploads/2024/03/1.jpg',
-      'https://wedlock.co.in/wp-content/uploads/2024/03/2.jpg',
-      'https://wedlock.co.in/wp-content/uploads/2024/03/3-1.jpg',
+      '/images/destinations/tuscany-1.jpg',
+      '/images/destinations/tuscany-2.jpg',
+      '/images/destinations/tuscany-3.jpg',
     ],
     why: [
       { title: 'A lifestyle, not just a venue', text: 'Wine tastings, truffle hunts, vintage Fiat convoys — the destination itself entertains your guests.' },
@@ -224,11 +224,11 @@ export const destinations: Destination[] = [
     bestSeason: 'November – March',
     idealGuests: '100 – 1,000 guests',
     access: 'Direct flights from every Indian metro; visa processed in 3–4 days',
-    heroImage: 'https://picsum.photos/seed/wedlock-dubai/1200/900',
+    heroImage: '/images/destinations/dubai.jpg',
     gallery: [
-      'https://picsum.photos/seed/wedlock-dubai-1/1200/900',
-      'https://picsum.photos/seed/wedlock-dubai-2/1200/900',
-      'https://picsum.photos/seed/wedlock-dubai-3/1200/900',
+      '/images/destinations/dubai-1.jpg',
+      '/images/destinations/dubai-2.jpg',
+      '/images/destinations/dubai-3.jpg',
     ],
     why: [
       { title: 'Zero-friction scale', text: 'The world’s most connected airport, hotels for every budget and regulations built for large Indian celebrations.' },

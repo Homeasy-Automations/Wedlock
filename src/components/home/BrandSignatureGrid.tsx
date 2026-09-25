@@ -3,30 +3,30 @@ import { GiFlowerTwirl, GiVineFlower, GiLotusFlower, GiFlowerPot, GiFlowers } fr
 
 const topPhotos = [
   {
-    src: 'https://wedlock.co.in/wp-content/uploads/2024/05/A50A1680-scaled.jpg',
+    src: '/images/wedlock/A50A1680-scaled.jpg',
     alt: 'Aisle styled with sheer drapes and wooden chairs',
   },
   {
-    src: 'https://wedlock.co.in/wp-content/uploads/2024/04/A50A2571EDITED.jpg',
+    src: '/images/wedlock/Wedding-Planner-scaled.jpg',
     alt: 'Couple sharing a quiet moment on their wedding day',
   },
   {
-    src: 'https://wedlock.co.in/wp-content/uploads/2024/03/DSC03554-scaled.jpg',
+    src: '/images/wedlock/DSC03554-scaled.jpg',
     alt: 'Tablescape with fine linens and fresh florals',
   },
 ];
 
 const bottomPhotos = [
   {
-    src: 'https://wedlock.co.in/wp-content/uploads/2024/05/DSC04668-scaled.jpg',
+    src: '/images/wedlock/DSC04668-scaled.jpg',
     alt: 'Reception hall styled with candlelight and greenery',
   },
   {
-    src: 'https://wedlock.co.in/wp-content/uploads/2024/05/A50A0632-scaled.jpg',
+    src: '/images/wedlock/201A2415-Photography-scaled.jpg',
     alt: 'Bride and groom walking a sunlit forest path',
   },
   {
-    src: 'https://wedlock.co.in/wp-content/uploads/2024/03/DSC04334-scaled.jpg',
+    src: '/images/wedlock/DSC04334-scaled.jpg',
     alt: 'Stage and banquet setup with floral centrepieces',
   },
 ];

@@ -171,5 +171,12 @@
     "savedPercent": "13.2%",
     "compressedAt": "2026-09-25T07:03:11.489Z",
     "crf": 23
+  },
+  "hero-wedding.mp4": {
+    "originalSize": 27987441,
+    "compressedSize": 19377139,
+    "savedPercent": "30.8%",
+    "compressedAt": "2026-09-25T10:06:25.866Z",
+    "crf": 23
   }
 }

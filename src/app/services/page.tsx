@@ -28,7 +28,10 @@ export default function ServicesPage() {
     <>
       <section className="relative flex min-h-[58svh] items-end overflow-hidden bg-ink">
         <div className="absolute inset-0 scale-110">
-          <HeroVideo src="/videos/stage-decor.mp4" />
+          <HeroVideo
+            src="/videos/Decoration.mp4"
+            poster="/images/wedlock/A50A1680-scaled.jpg"
+          />
         </div>
 
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/35" />
