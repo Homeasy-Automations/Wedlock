@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CalendarDays, ChevronRight, MapPin, Tag, Users } from 'lucide-react';
@@ -89,7 +90,18 @@ export default function EventDetailPage({ params }: EventDetailProps) {
 
         <div className="container-x mt-10">
           <div className="relative aspect-[16/8] max-h-[620px] w-full overflow-hidden rounded-[2rem]">
-            <HeroVideo src={event.heroVideo ?? '/videos/wedding1.mp4'} poster={event.heroImage} />
+            {event.heroVideo ? (
+              <HeroVideo src={event.heroVideo} poster={event.heroImage} />
+            ) : (
+              <Image
+                src={event.heroImage}
+                alt={event.title}
+                fill
+                priority
+                sizes="(max-width: 1280px) 100vw, 1280px"
+                className="object-cover"
+              />
+            )}
           </div>
         </div>
       </section>

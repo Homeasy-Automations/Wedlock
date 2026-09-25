@@ -85,7 +85,6 @@ export const events: EventItem[] = [
       'Adults got a prosecco garden; the under-fives got a bubble orchestra. The smash cake moment was photographed from four angles — as it should be.',
     ],
     heroImage: '/images/celebrations/birthdays/birthday-zara-hero.jpg',
-    heroVideo: '/videos/stage-decor1.mp4',
     gallery: [
       '/images/celebrations/birthdays/birthday-zara-1.jpg',
       '/images/celebrations/birthdays/birthday-zara-2.jpg',
@@ -150,7 +149,6 @@ export const events: EventItem[] = [
       'Every evening ended around a bonfire with a curated family slideshow. Our favourite deliverable: a printed reunion newspaper, The Kapoor Chronicle, distributed at farewell brunch.',
     ],
     heroImage: '/images/celebrations/family/family-kapoor-hero.jpg',
-    heroVideo: '/videos/stage-decor5.mp4',
     gallery: [
       '/images/celebrations/family/family-kapoor-1.jpg',
       '/images/celebrations/family/family-kapoor-2.jpg',
@@ -215,7 +213,6 @@ export const events: EventItem[] = [
       'A surprise set by his college band (reunited after 33 years) closed the evening. Production note: hiding a five-piece band in a beach villa is harder than it sounds.',
     ],
     heroImage: '/images/celebrations/birthdays/birthday-sixty-hero.jpg',
-    heroVideo: '/videos/stage-decor6.mp4',
     gallery: [
       '/images/celebrations/birthdays/birthday-sixty-1.jpg',
       '/images/celebrations/birthdays/birthday-sixty-2.jpg',
@@ -343,7 +340,6 @@ export const events: EventItem[] = [
       'Dinner was strictly her recipes, cooked by two of her original kitchen helpers we located in Shantiniketan. She cried. We had budgeted for exactly one tissue-box per table. We under-budgeted.',
     ],
     heroImage: '/images/celebrations/family/family-nani-hero.jpg',
-    heroVideo: '/videos/stage-decor.mp4',
     gallery: [
       '/images/celebrations/family/family-nani-1.jpg',
       '/images/celebrations/family/family-nani-2.jpg',
