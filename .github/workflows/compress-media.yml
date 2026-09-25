@@ -1,0 +1,48 @@
+name: Media Compression Check & Optimize
+
+on:
+  pull_request:
+    paths:
+      - 'public/videos/**'
+      - 'public/images/**'
+  workflow_dispatch:
+    inputs:
+      auto_commit:
+        description: 'Automatically commit compressed media back to branch'
+        type: boolean
+        default: true
+      crf:
+        description: 'CRF quality value (18-28)'
+        type: string
+        default: '23'
+
+jobs:
+  media-optimization:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check Media Optimization
+        if: ${{ github.event_name == 'pull_request' }}
+        run: npm run check:media
+
+      - name: Compress Media
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: node scripts/compress-media.mjs --crf ${{ inputs.crf }}
+
+      - name: Commit and push changes
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.auto_commit == true }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(media): compress videos and optimize for web streaming'
+          file_pattern: 'public/videos/** public/images/**'

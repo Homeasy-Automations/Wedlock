@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "start": "next start -H 0.0.0.0"
+    "start": "next start -H 0.0.0.0",
+    "prepare": "node scripts/setup-hooks.mjs",
+    "compress": "node scripts/compress-media.mjs",
+    "compress:videos": "node scripts/compress-media.mjs",
+    "compress:dry": "node scripts/compress-media.mjs --dry-run",
+    "check:media": "node scripts/compress-media.mjs --check"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -23,6 +28,7 @@
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "autoprefixer": "^10.4.20",
+    "ffmpeg-static": "^5.3.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3"
