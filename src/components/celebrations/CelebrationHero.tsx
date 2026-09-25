@@ -22,7 +22,7 @@ export default function CelebrationHero({ celebration }: { celebration: Celebrat
       className="relative flex min-h-[88svh] items-end overflow-hidden bg-ink"
       style={{ ['--cat' as string]: celebration.accent } as React.CSSProperties}
     >
-      <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110">
+      <motion.div style={{ y: bgY }} className="absolute inset-0 scale-100">
         <div className={reduce ? 'absolute inset-0' : 'absolute inset-0 animate-kenburns'}>
           {celebration.heroVideo ? (
             <HeroVideo src={celebration.heroVideo} poster={celebration.heroImage} />
