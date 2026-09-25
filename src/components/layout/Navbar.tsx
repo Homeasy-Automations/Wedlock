@@ -71,21 +71,16 @@ export default function Navbar() {
           >
             <span
               className={cn(
-                'font-sacramento text-[2.5rem] leading-none transition-colors duration-500',
+                'font-sacramento text-[2.5rem] leading-none transition-colors duration-300',
                 !scrolled
-                  ? 'text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)] group-hover:text-gold'
+                  ? 'text-white group-hover:text-gold'
                   : 'text-ink group-hover:text-gold',
               )}
             >
               Wedlock
             </span>
             <span
-              className={cn(
-                'mb-1 inline-block h-2 w-2 rounded-full transition-all duration-500',
-                !scrolled
-                  ? 'bg-gold shadow-[0_0_12px_rgba(201,162,75,0.9)]'
-                  : 'bg-gold shadow-[0_0_8px_rgba(201,162,75,0.6)]',
-              )}
+              className="mb-1 inline-block h-2 w-2 rounded-full bg-gold transition-colors duration-300"
               aria-hidden
             />
           </Link>
@@ -95,11 +90,11 @@ export default function Navbar() {
             <div className="group relative">
               <button
                 className={cn(
-                  'flex items-center gap-1 rounded-full px-4 py-2 text-[13.5px] font-semibold tracking-wide transition-colors duration-500',
+                  'flex items-center gap-1 rounded-full px-4 py-2 text-[13.5px] font-semibold tracking-wide transition-colors duration-300',
                   isActive('/celebrations')
-                    ? 'text-gold font-bold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                    ? 'text-gold font-bold'
                     : !scrolled
-                      ? 'text-white hover:text-gold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                      ? 'text-white hover:text-gold'
                       : 'text-ink/80 hover:text-ink',
                 )}
                 aria-haspopup="true"
@@ -157,11 +152,11 @@ export default function Navbar() {
                 key={l.href}
                 href={l.href}
                 className={cn(
-                  'rounded-full px-4 py-2 text-[13.5px] font-semibold tracking-wide transition-colors duration-500',
+                  'relative rounded-full px-4 py-2 text-[13.5px] font-semibold tracking-wide transition-colors duration-300',
                   isActive(l.href)
-                    ? 'text-gold font-bold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                    ? 'text-gold font-bold'
                     : !scrolled
-                      ? 'text-white hover:text-gold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                      ? 'text-white hover:text-gold'
                       : 'text-ink/80 hover:text-ink',
                 )}
               >
@@ -172,11 +167,11 @@ export default function Navbar() {
             <Link
               href="/contact"
               className={cn(
-                'rounded-full px-4 py-2 text-[13.5px] font-semibold tracking-wide transition-colors duration-500',
+                'relative rounded-full px-4 py-2 text-[13.5px] font-semibold tracking-wide transition-colors duration-300',
                 isActive('/contact')
-                  ? 'text-gold font-bold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                  ? 'text-gold font-bold'
                   : !scrolled
-                    ? 'text-white hover:text-gold drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]'
+                    ? 'text-white hover:text-gold'
                     : 'text-ink/80 hover:text-ink',
               )}
             >
